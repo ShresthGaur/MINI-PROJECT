@@ -106,8 +106,10 @@ main h2 {
     font-weight: bold;
 }
 
-.project-grid {
-    overflow: auto; 
+.project-grid::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .project-card {
